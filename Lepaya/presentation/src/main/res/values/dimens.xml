@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--                    -->
+    <!--         Text       -->
+    <!--                    -->
+
+    <!-- TextView -->
+    <dimen name="textSize12">12sp</dimen>
+    <dimen name="textSize14">14sp</dimen>
+    <dimen name="textSize16">16sp</dimen>
+    <dimen name="textSize18">18sp</dimen>
+    <dimen name="textSize20">20sp</dimen>
+    <dimen name="textSize22">22sp</dimen>
+    <dimen name="textSize24">24sp</dimen>
+    <dimen name="textSize26">26sp</dimen>
+    <dimen name="textSize28">28sp</dimen>
+    <dimen name="textSize30">30sp</dimen>
+
+
+    <!-- EditText -->
+    <dimen name="etTextSize">20sp</dimen>
+
+    <!-- ImageView -->
+    <dimen name="ivAvatarWidth">80dp</dimen>
+    <dimen name="ivAvatarHeight">120sp</dimen>
+
+    <dimen name="ivAvatarWidthLarge">120dp</dimen>
+    <dimen name="ivAvatarHeightLarge">160sp</dimen>
+
+    <!--                    -->
+    <!--         Text       -->
+    <!--                    -->
+
+
+    <!--                    -->
+    <!-- Margins, padding's -->
+    <!--                    -->
+
+    <!-- Base margin -->
+    <dimen name="baseMargin">16dp</dimen>
+    <dimen name="basePadding">16dp</dimen>
+
+    <!-- Margin -->
+    <dimen name="marginStart">4dp</dimen>
+    <dimen name="marginTop">4dp</dimen>
+    <dimen name="marginEnd">4dp</dimen>
+    <dimen name="marginBottom">4dp</dimen>
+
+    <!-- Small margin -->
+    <dimen name="smallMarginStart">8dp</dimen>
+    <dimen name="smallMarginTop">8dp</dimen>
+    <dimen name="smallMarginEnd">8dp</dimen>
+    <dimen name="smallMarginBottom">8dp</dimen>
+
+    <!-- Medium margin -->
+    <dimen name="mediumMarginStart">12dp</dimen>
+    <dimen name="mediumMarginTop">12dp</dimen>
+    <dimen name="mediumMarginEnd">12dp</dimen>
+    <dimen name="mediumMarginBottom">12dp</dimen>
+
+    <!--  Base margin -->
+    <dimen name="baseMarginStart">16dp</dimen>
+    <dimen name="baseMarginTop">16dp</dimen>
+    <dimen name="baseMarginEnd">16dp</dimen>
+    <dimen name="baseMarginBottom">16dp</dimen>
+
+    <!-- Big margin -->
+    <dimen name="bigMarginStart">32dp</dimen>
+    <dimen name="bigMarginTop">32dp</dimen>
+    <dimen name="bigMarginEnd">32dp</dimen>
+    <dimen name="bigMarginBottom">32dp</dimen>
+
+    <!-- Extra big margin -->
+    <dimen name="extraBigMarginStart">48dp</dimen>
+    <dimen name="extraBigMarginTop">48dp</dimen>
+    <dimen name="extraBigMarginEnd">48dp</dimen>
+    <dimen name="extraBigMarginBottom">48dp</dimen>
+
+    <!-- Padding -->
+    <dimen name="paddingStart">4dp</dimen>
+    <dimen name="paddingTop">4dp</dimen>
+    <dimen name="paddingEnd">4dp</dimen>
+    <dimen name="paddingBottom">4dp</dimen>
+    <dimen name="padding2dp">2dp</dimen>
+
+    <!-- Small padding -->
+    <dimen name="smallPaddingStart">8dp</dimen>
+    <dimen name="smallPaddingTop">8dp</dimen>
+    <dimen name="smallPaddingEnd">8dp</dimen>
+    <dimen name="smallPaddingBottom">8dp</dimen>
+
+    <!-- Medium padding -->
+    <dimen name="mediumPaddingStart">12dp</dimen>
+    <dimen name="mediumPaddingTop">12dp</dimen>
+    <dimen name="mediumPaddingEnd">12dp</dimen>
+    <dimen name="mediumPaddingBottom">12dp</dimen>
+
+    <!-- Base padding -->
+    <dimen name="basePaddingStart">16dp</dimen>
+    <dimen name="basePaddingTop">16dp</dimen>
+    <dimen name="basePaddingEnd">16dp</dimen>
+    <dimen name="basePaddingBottom">16dp</dimen>
+
+    <!-- Big padding -->
+    <dimen name="bigPaddingStart">32dp</dimen>
+    <dimen name="bigPaddingTop">32dp</dimen>
+    <dimen name="bigPaddingEnd">32dp</dimen>
+    <dimen name="bigPaddingBottom">32dp</dimen>
+
+    <!--                     -->
+    <!-- Margin's, padding's -->
+    <!--                     -->
+    <!--                     -->
+    <!-- Corners, elevation  -->
+    <!--                     -->
+
+    <dimen name="cornerRadiusVerySmall">4dp</dimen>
+    <dimen name="cornerRadiusSmall">6dp</dimen>
+    <dimen name="cornerRadiusMedium">8dp</dimen>
+    <dimen name="cornerRadiusBig">12dp</dimen>
+
+</resources>

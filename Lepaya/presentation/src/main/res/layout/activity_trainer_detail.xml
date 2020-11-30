@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ui.trainer.detail.TrainerDetailsActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/baseMargin"
+        app:cardBackgroundColor="@color/colorPrimary"
+        app:cardCornerRadius="@dimen/cornerRadiusMedium"
+        app:cardElevation="@dimen/cardview_default_elevation"
+        app:cardUseCompatPadding="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/bigPaddingTop"
+            android:paddingBottom="@dimen/bigPaddingBottom">
+
+
+            <ImageView
+                android:id="@+id/ivAvatar"
+                android:layout_width="@dimen/ivAvatarWidthLarge"
+                android:layout_height="@dimen/ivAvatarHeightLarge"
+                android:contentDescription="@string/app_name"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/tvFullName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/mediumMarginTop"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize18"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/ivAvatar"
+                app:layout_constraintStart_toStartOf="@+id/ivAvatar"
+                app:layout_constraintTop_toBottomOf="@+id/ivAvatar" />
+
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/smallMarginTop"
+                android:textColor="@color/light_gray"
+                android:textSize="@dimen/textSize16"
+                app:layout_constraintEnd_toEndOf="@+id/ivAvatar"
+                app:layout_constraintStart_toStartOf="@+id/ivAvatar"
+                app:layout_constraintTop_toBottomOf="@+id/tvFullName" />
+
+            <TextView
+                android:id="@+id/tvCreatedAt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/smallMarginTop"
+                android:textColor="@color/light_gray"
+                android:textSize="@dimen/textSize16"
+                app:layout_constraintEnd_toEndOf="@+id/ivAvatar"
+                app:layout_constraintStart_toStartOf="@+id/ivAvatar"
+                app:layout_constraintTop_toBottomOf="@+id/tvEmail" />
+
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="@dimen/mediumMarginStart"
+                android:layout_marginTop="@dimen/baseMarginTop"
+                android:layout_marginEnd="@dimen/mediumMarginEnd"
+                android:background="@color/light_gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvCreatedAt" />
+
+            <TextView
+                android:id="@+id/tvAvailabilityTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/baseMarginStart"
+                android:layout_marginTop="@dimen/baseMarginTop"
+                android:text="@string/availability"
+                android:textColor="@color/light_gray"
+                android:textSize="@dimen/textSize14"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/view" />
+
+            <TextView
+                android:id="@+id/tvAvailability"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/mediumMarginStart"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize16"
+                app:layout_constraintBaseline_toBaselineOf="@+id/tvAvailabilityTitle"
+                app:layout_constraintStart_toEndOf="@+id/tvAvailabilityTitle" />
+
+            <TextView
+                android:id="@+id/tvFavoriteFruitTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/baseMarginStart"
+                android:layout_marginTop="@dimen/baseMarginTop"
+                android:text="@string/favoriteFruit"
+                android:textColor="@color/light_gray"
+                android:textSize="@dimen/textSize14"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvAvailabilityTitle" />
+
+            <TextView
+                android:id="@+id/tvFavoriteFruit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/mediumMarginStart"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize16"
+                app:layout_constraintBaseline_toBaselineOf="@+id/tvFavoriteFruitTitle"
+                app:layout_constraintStart_toEndOf="@+id/tvFavoriteFruitTitle" />
+
+            <TextView
+                android:id="@+id/tvSkillsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/baseMarginStart"
+                android:layout_marginTop="@dimen/baseMarginTop"
+                android:text="@string/skills"
+                android:textColor="@color/light_gray"
+                android:textSize="@dimen/textSize14"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvFavoriteFruit" />
+
+            <TextView
+                android:id="@+id/tvSkills"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/mediumMarginStart"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize16"
+                app:layout_constraintBaseline_toBaselineOf="@+id/tvSkillsTitle"
+                app:layout_constraintStart_toEndOf="@+id/tvSkillsTitle" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</ScrollView>
+
+

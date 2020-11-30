@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="@dimen/ivAvatarWidth"
+        android:layout_height="@dimen/ivAvatarHeight"
+        android:layout_margin="@dimen/baseMargin"
+        app:cardCornerRadius="@dimen/cornerRadiusMedium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+
+                android:id="@+id/ivAvatar"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_launcher"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tvFullName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/smallMarginStart"
+        android:layout_marginEnd="@dimen/smallMarginEnd"
+        android:padding="@dimen/mediumPaddingTop"
+        android:text="@string/fullName"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize22"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cardView"
+        app:layout_constraintTop_toTopOf="@+id/cardView" />
+
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/mediumMarginStart"
+        android:paddingEnd="@dimen/mediumPaddingEnd"
+        android:text="@string/email"
+        android:textColor="@color/light_gray"
+        android:textSize="@dimen/textSize16"
+        app:layout_constraintEnd_toEndOf="@+id/tvFullName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvFullName"
+        app:layout_constraintTop_toBottomOf="@+id/tvFullName" />
+
+    <TextView
+        android:id="@+id/tvCreatedAt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/mediumMarginStart"
+        android:paddingEnd="@dimen/mediumPaddingEnd"
+        android:layout_marginTop="@dimen/marginTop"
+        android:text="@string/createdAt"
+        android:textColor="@color/light_gray"
+        android:textSize="@dimen/textSize16"
+        app:layout_constraintEnd_toEndOf="@+id/tvFullName"
+        app:layout_constraintStart_toStartOf="@+id/tvFullName"
+        app:layout_constraintTop_toBottomOf="@+id/tvEmail" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/baseMarginStart"
+        android:layout_marginTop="@dimen/baseMarginTop"
+        android:layout_marginEnd="@dimen/baseMarginEnd"
+        android:background="@color/light_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

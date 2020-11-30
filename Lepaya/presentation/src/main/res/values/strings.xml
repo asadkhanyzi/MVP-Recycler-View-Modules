@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Lepaya Test</string>
+    <string name="errorNetworkConnection">Network error</string>
+    <string name="errorUnknownError">Unknown error</string>
+    <string name="searchTrainer">Search trainer</string>
+    <string name="fullName">Full name</string>
+    <string name="email">Email</string>
+    <string name="availability">Availability</string>
+    <string name="favoriteFruit">Favorite fruit</string>
+    <string name="skills">Skills</string>
+    <string name="createdAt">Created at</string>
+</resources>

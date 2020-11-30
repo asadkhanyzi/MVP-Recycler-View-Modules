@@ -1,0 +1,95 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: "kotlin-kapt"
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.2"
+
+    defaultConfig {
+        applicationId "com.lepaya.test"
+        minSdkVersion 17
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8.toString()
+    }
+
+    lintOptions {
+        quiet true
+        abortOnError false
+        ignoreWarnings true
+        checkReleaseBuilds false
+    }
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+        test.java.srcDirs += 'src/test/kotlin'
+        androidTest.java.srcDirs += 'src/androidTest/kotlin'
+    }
+    buildTypes {
+        debug {
+            debuggable true
+            jniDebuggable true
+
+            // Debug API url
+            buildConfigField "String", "BASE_API_URL", '"https://5fb52c64e473ab0016a179a0.mockapi.io/api/v1/"'
+
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    // Modules
+    implementation project(':data')
+    implementation project(':domain')
+
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    // AndroidX
+    implementation androidx.appcompat
+    implementation androidx.cardview
+    implementation androidx.recyclerview
+    implementation androidx.constraintlayout
+    implementation androidx.viewpager2
+
+    implementation androidx.core_ktx
+    // Kotlin
+    implementation kotlin_lang.stdlib
+    implementation kotlin_lang.coroutines_core
+    implementation kotlin_lang.coroutines_android
+    // Network
+    implementation network.retrofit
+    implementation network.gson_converter
+    implementation network.okhttp
+    implementation network.logging_interceptor
+
+    // MVP
+    implementation mvp.moxy
+    implementation mvp.moxy_androidx
+    implementation mvp.moxy_ktx
+    kapt mvp.moxy_compiler
+
+    // DI
+    implementation di.koin
+    // Other
+    implementation other.timber
+    implementation other.picasso
+}
